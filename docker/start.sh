@@ -20,6 +20,7 @@ desktop_start() {
         -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
         -v $workspace_dir/../py_files:/home/docker_current/py_files:rw \
         -v /mnt/hdd8/petryashin_ie/library_challenge:/home/docker_current/datasets:rw \
+        -v /mnt/hdd8/petryashin_ie/cache_lib_chal:/home/docker_current/.cache:rw \
         ${ARCH}/library_hack_lip:latest
     xhost -
 }

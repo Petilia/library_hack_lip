@@ -21,6 +21,10 @@ RUN pip install pandas seaborn matplotlib sklearn
 RUN pip install ruclip==0.0.2
 RUN pip install ipywidgets
 
+RUN git clone https://github.com/mlfoundations/open_clip 
+WORKDIR open_clip 
+RUN python setup.py install
+
 #### ADD USER WITH DEFAULT PW
 ARG USER=docker_current
 ARG UID=1000
