@@ -1,3 +1,6 @@
 py_files/first_submit.csv
 py_files/sample_solution.csv
 py_files/__pycache__
+*.cpython
+*.csv
+*.npy

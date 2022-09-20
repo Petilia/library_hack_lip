@@ -16,6 +16,10 @@ RUN pip3 install torch==1.10.1 \
 
 RUN pip install multilingual-clip
 RUN pip install git+https://github.com/openai/CLIP.git
+# RUN pip install open_clip_torch
+RUN pip install pandas seaborn matplotlib sklearn
+RUN pip install ruclip==0.0.2
+RUN pip install ipywidgets
 
 #### ADD USER WITH DEFAULT PW
 ARG USER=docker_current
