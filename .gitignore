@@ -5,3 +5,5 @@ py_files/__pycache__
 *.csv
 *.npy
 *.pth
+*.pyc
+
