@@ -7,3 +7,5 @@ py_files/__pycache__
 *.pth
 *.pyc
 
+py_files/hungarian_translate_exp/lip.ipynb
+py_files/MLCLIP_exp/__pycache__/MLCLIP_utils.cpython-36.pyc
