@@ -26,6 +26,7 @@ WORKDIR open_clip
 RUN python setup.py install
 
 RUN pip install transformers[sentencepiece]
+RUN pip install catboost
 
 #### ADD USER WITH DEFAULT PW
 ARG USER=docker_current

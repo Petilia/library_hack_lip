@@ -50,3 +50,14 @@ class MLCLIPPredictor():
         text_features = self.text_model.forward(text, self.text_tokenizer).cpu().detach().numpy()
 
         return text_features, image_features
+
+    def inference_text(self, text):
+        text_features = self.text_model.forward(text, self.text_tokenizer).cpu().detach().numpy()
+        return text_features
+
+    def inference_image(self, image):
+        image = self.image_preproc(image).unsqueeze(0).to(self.device)
+        with torch.no_grad():
+            image_features = self.image_model.encode_image(image).cpu().detach().numpy()
+
+        return image_features
